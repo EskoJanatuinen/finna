@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 """Module for accessing Finna.fi REST API"""
 
-# Activate virtual environment: source finna_venv/bin/activate     
-# (To deactivate venv: conda deactivate) (if that doesn't work try: deactivate or source deactivate)
-# Select interpreter (View -> Command Palette -> Python interpreter): Python 3.12.3('finna:venv':venv)
-# Usage: python3 finna.py
+
 
 from finna_client import FinnaClient
 import requests
@@ -15,7 +12,7 @@ API_BASE = 'https://api.finna.fi/api/v1/'
 
 # Creating a client
 finna = FinnaClient()
-print("Now we have a FinnaClient object:", finna)
+print("FinnaClient luotu:", finna)
 
 # Testing search
 #print("* Performing a general search")
@@ -23,8 +20,6 @@ print("Now we have a FinnaClient object:", finna)
 #print("Search would have matched {} records".format(result['resultCount']))
 #for rec in result['records']:
 #    print(rec)
-
-print("* Performing a general search")
 
 
 print("Syötä ISBN: ")
